@@ -1,0 +1,35 @@
+{% extends "base.html" %}{% block title %}Sign in{% endblock %}{% block content
+%}
+<section class="auth-card">
+  <a class="brand"><i>C</i> Campus<span>Flow</span></a
+  ><small class="eyebrow">WELCOME BACK</small>
+  <h1>Sign in to your<br />workspace.</h1>
+  <p class="muted">A clearer view of every learner, every milestone.</p>
+  <form method="post">
+    <label>Username</label
+    ><input
+      class="form-control"
+      name="username"
+      required
+      placeholder="Your username"
+    /><label>Password</label
+    ><input
+      class="form-control"
+      type="password"
+      name="password"
+      required
+      placeholder="Your password"
+    /><button class="btn btn-primary w-100">Sign in →</button>
+  </form>
+  <p class="foot">
+    First time? <a href="{{url_for('setup')}}">Create administrator account</a>
+  </p>
+</section>
+<div class="auth-art">
+  <div>
+    <small>✦ YOUR CAMPUS, CONNECTED</small>
+    <h2>Make student data<br />work smarter.</h2>
+    <p>Student records · Attendance · Performance</p>
+  </div>
+</div>
+{% endblock %}
